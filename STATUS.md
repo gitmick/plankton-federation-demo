@@ -57,4 +57,4 @@ _Union of 3 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`._
 | `6bea601f1f71` | reviewed | CN=Participant-C | `70bb2c8898612eb9` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-09T20:11:03Z from the content-addressed union._
+_Generated 2026-07-09T21:37:47Z from the content-addressed union._
