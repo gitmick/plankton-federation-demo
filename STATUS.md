@@ -1,17 +1,22 @@
 # Federation status
 
-_Union of 3 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`._
+_Union of 4 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`._
 
-**10 fotons** (reproducible results) · **7 claims** (signed statements) in the union.
+**10 fotons** (reproducible results) · **34 claims** (signed statements) in the union.
 
 ## Signers
 
 | keyid | fotons | claims |
 |---|--:|--:|
 | `04beccabc4b7e1ca` | 0 | 1 |
+| `1cc05d29616098c3` | 0 | 7 |
 | `3d6428cc7ca58ac8` | 8 | 0 |
 | `41689cef7a320957` | 0 | 2 |
+| `66fd55ee56c8ac29` | 0 | 1 |
+| `69cb06daaf69b642` | 0 | 5 |
 | `70bb2c8898612eb9` | 0 | 1 |
+| `8f69f0f5b834f833` | 0 | 3 |
+| `ae6a2d9c56220894` | 0 | 11 |
 | `bf2bd55457281324` | 0 | 1 |
 | `c3af895761b197a8` | 0 | 1 |
 | `cdb01ecbba16065a` | 1 | 0 |
@@ -49,12 +54,39 @@ _Union of 3 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`._
 
 | about (subject) | predicate | by | signer |
 |---|---|---|---|
+| `246192ddce52` | located-at | CN=Participant-A | `69cb06daaf69b642` |
+| `183187c66d9c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `cd61f3f0e492` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `f09b1c375d4c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `796e4c8c3f64` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `18dda5659158` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `a6cc7d1a61ef` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `b313f8992e77` | reviewed | CN=Participant-A | `c3af895761b197a8` |
+| `fe768db44af2` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
+| `3fe657401f35` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `b4fff526596d` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `b8b35240d3d1` | qualifies-as | CN=Participant-A | `69cb06daaf69b642` |
+| `246192ddce52` | describes | CN=Participant-A | `69cb06daaf69b642` |
+| `db41c334dd18` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `b313f8992e77` | refines | CN=Participant-C | `66fd55ee56c8ac29` |
+| `d46ca0f3f196` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `f90b314cf558` | describes | CN=Participant-A | `41689cef7a320957` |
 | `6899d057107e` | finding | CN=Participant-B | `df5be38c3b2fc3f8` |
+| `f90b314cf558` | environment | CN=Participant-A | `69cb06daaf69b642` |
 | `896fdf25781b` | finding | CN=Participant-A | `41689cef7a320957` |
+| `6c46fc939ed9` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `d2df4751162c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `5c1e49fdab74` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
+| `58e761b78782` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `d03f2846911a` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
+| `1891f92d1f2c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `ea209e0e6263` | finding | CN=Participant-C | `bf2bd55457281324` |
+| `5bf57ea454be` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `c402694bf9c6` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `b8b35240d3d1` | located-at | CN=Participant-A | `69cb06daaf69b642` |
 | `6bea601f1f71` | reviewed | CN=Participant-C | `70bb2c8898612eb9` |
+| `30fa01a85437` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `c05e961f8524` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-09T21:37:47Z from the content-addressed union._
+_Generated 2026-07-09T23:15:05Z from the content-addressed union._
