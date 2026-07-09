@@ -1,0 +1,33 @@
+name: Register a participant
+description: Register your repository to be aggregated into the federation.
+title: "[register] <your participant name>"
+labels: ["registration"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Register an independent repository to be pulled into the federated union. The aggregator
+        mirrors your **signed, content-addressed records** (a `plankton-data/` and/or `nekton-data/`
+        directory at the repo root) — it reruns nothing and trusts the hash, not your word.
+  - type: input
+    id: name
+    attributes:
+      label: Participant name
+      placeholder: pfed-a
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: Repository URL
+      description: A public git URL whose root holds plankton-data/ and/or nekton-data/.
+      placeholder: https://github.com/gitmick/pfed-a
+    validations:
+      required: true
+  - type: input
+    id: pubkey
+    attributes:
+      label: Public key (hex)
+      description: Optional — your signing identity's public key, so others can attribute your records.
+    validations:
+      required: false
