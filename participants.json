@@ -1,1 +1,20 @@
-{ "schema": "https://plankton.dev/federation/participants/v0", "participants": [] }
+{
+  "schema": "https://plankton.dev/federation/participants/v0",
+  "participants": [
+    {
+      "name": "pfed-a",
+      "repo": "https://github.com/gitmick/pfed-a.git",
+      "pubkey": "a484088d8d507f84754b62b62daed2e28416ca6b2d83ad3f8faed8c74adb96b0"
+    },
+    {
+      "name": "pfed-b",
+      "repo": "https://github.com/gitmick/pfed-b.git",
+      "pubkey": "f2fc784742e1837856bff3d888f72493812dfc7406652eae0eb1c0c82946b191"
+    },
+    {
+      "name": "pfed-c",
+      "repo": "https://github.com/gitmick/pfed-c.git",
+      "pubkey": "6264589eafc5409f572b5ab61424ee548b44b8018c6c76101f1073d6999d23f2"
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # Federation status
 
-_Union of 0 registered participant(s): none yet._
+_Union of 3 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`._
 
 **10 fotons** (reproducible results) · **4 claims** (signed statements) in the union.
 
@@ -51,4 +51,4 @@ _Union of 0 registered participant(s): none yet._
 | `896fdf25781b` | finding | CN=Participant-A | `41689cef7a320957` |
 | `ea209e0e6263` | finding | CN=Participant-C | `bf2bd55457281324` |
 
-_Generated 2026-07-09T19:53:57Z from the content-addressed union._
+_Generated 2026-07-09T19:54:41Z from the content-addressed union._
