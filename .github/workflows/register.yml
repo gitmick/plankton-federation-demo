@@ -1,0 +1,76 @@
+name: register
+
+# Self-service registration. A newcomer opens a "Register a participant" issue (the form in
+# .github/ISSUE_TEMPLATE/register.yml); this Action parses it, appends the participant to
+# participants.json, kicks off an aggregate run, and closes the issue with a confirmation.
+
+on:
+  issues:
+    types: [opened]
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  register:
+    if: contains(github.event.issue.title, '[register]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse the issue form and append to participants.json
+        id: reg
+        env:
+          BODY: ${{ github.event.issue.body }}
+          ISSUE: ${{ github.event.issue.number }}
+          ACTOR: ${{ github.event.issue.user.login }}
+        run: |
+          python3 - <<'PY'
+          import json, os, re, sys
+          body = os.environ["BODY"]
+          # GitHub issue-forms render as "### Label\n\nvalue" blocks
+          def field(label):
+              m = re.search(r"###\s*"+re.escape(label)+r"\s*\n+([^\n#]+)", body)
+              return (m.group(1).strip() if m else "")
+          name   = field("Participant name")
+          repo   = field("Repository URL")
+          pubkey = field("Public key (hex)")
+          if not name or not repo:
+              print("::error::missing name or repo"); sys.exit(1)
+          repo = repo.rstrip("/")
+          if not repo.endswith(".git") and repo.startswith("http"):
+              repo = repo + ".git"
+          reg = json.load(open("participants.json"))
+          if any(x.get("repo") == repo for x in reg["participants"]):
+              print(f"already-registered={repo}")
+          else:
+              reg["participants"].append({
+                  "name": name, "repo": repo, "pubkey": pubkey,
+                  "registeredBy": os.environ["ACTOR"], "issue": int(os.environ["ISSUE"]),
+              })
+              json.dump(reg, open("participants.json","w"), indent=2)
+              open("participants.json","a").write("\n")
+          with open(os.environ["GITHUB_OUTPUT"],"a") as f:
+              f.write(f"name={name}\nrepo={repo}\n")
+          PY
+
+      - name: Commit the new participant
+        run: |
+          git config user.name "plankton-aggregator"
+          git config user.email "aggregator@users.noreply.github.com"
+          git add participants.json
+          if git diff --cached --quiet; then
+            echo "no change (already registered)"
+          else
+            git commit -m "register: ${{ steps.reg.outputs.name }} (#${{ github.event.issue.number }})"
+            git push
+          fi
+
+      - name: Confirm on the issue and close it
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} --repo ${{ github.repository }} \
+            --body "Registered **${{ steps.reg.outputs.name }}** → \`${{ steps.reg.outputs.repo }}\`. An aggregate run will pick up your signed records. See [STATUS.md](../blob/main/STATUS.md)."
+          gh issue close ${{ github.event.issue.number }} --repo ${{ github.repository }}
