@@ -1,3 +1,54 @@
 # Federation status
 
-_No aggregate run yet. Register participants, then trigger the `aggregate` workflow._
+_Union of 0 registered participant(s): none yet._
+
+**10 fotons** (reproducible results) · **4 claims** (signed statements) in the union.
+
+## Signers
+
+| keyid | fotons | claims |
+|---|--:|--:|
+| `3d6428cc7ca58ac8` | 8 | 0 |
+| `41689cef7a320957` | 0 | 2 |
+| `bf2bd55457281324` | 0 | 1 |
+| `cdb01ecbba16065a` | 1 | 0 |
+| `df5be38c3b2fc3f8` | 0 | 1 |
+| `ee0f0c123665bcbb` | 1 | 0 |
+
+## Fotons (reproducible results)
+
+| output | built on (inputs) | kind / cmd | signer |
+|---|---|---|---|
+| `eed552dbff99` | `61d6e3dc4c2e`, `b4fff526596d` | python work/step3_hvg.py | `3d6428cc7ca58ac8` |
+| `b827998c0c49` | `6c46fc939ed9`, `f09b1c375d4c` | python work/step0_load.py | `3d6428cc7ca58ac8` |
+| `795372847744` | `eed552dbff99`, `30fa01a85437` | python work/step4_pca.py | `3d6428cc7ca58ac8` |
+| `d03f2846911a, fe768db44af2` | `1891f92d1f2c`, `5c1e49fdab74` | python work/coarse_map.py | `ee0f0c123665bcbb` |
+| `fbcdd3116ba0` | `ac3bcf10a700`, `d46ca0f3f196` | python work/step7_split.py | `3d6428cc7ca58ac8` |
+| `ac3bcf10a700, a6cc7d1a61ef` | `1891f92d1f2c`, `db41c334dd18` | python work/step6_cluster.py | `3d6428cc7ca58ac8` |
+| `61d6e3dc4c2e` | `58fb727f1f19`, `183187c66d9c` | python work/step2_norm.py | `3d6428cc7ca58ac8` |
+| `58fb727f1f19` | `b827998c0c49`, `3fe657401f35` | python work/step1_qc.py | `3d6428cc7ca58ac8` |
+| `c05e961f8524, c402694bf9c6` | `1891f92d1f2c`, `5bf57ea454be` | python work/fine_split2.py | `cdb01ecbba16065a` |
+| `1891f92d1f2c` | `795372847744`, `d2df4751162c` | python work/step5_neighbors.py | `3d6428cc7ca58ac8` |
+
+## Build-on edges (who built on whose result)
+
+- foton `eed552dbff99` (signer `3d6428cc7ca58ac8`) builds on `61d6e3dc4c2e`
+- foton `795372847744` (signer `3d6428cc7ca58ac8`) builds on `eed552dbff99`
+- foton `d03f2846911a` (signer `ee0f0c123665bcbb`) builds on `1891f92d1f2c`
+- foton `fbcdd3116ba0` (signer `3d6428cc7ca58ac8`) builds on `ac3bcf10a700`
+- foton `ac3bcf10a700` (signer `3d6428cc7ca58ac8`) builds on `1891f92d1f2c`
+- foton `61d6e3dc4c2e` (signer `3d6428cc7ca58ac8`) builds on `58fb727f1f19`
+- foton `58fb727f1f19` (signer `3d6428cc7ca58ac8`) builds on `b827998c0c49`
+- foton `c05e961f8524` (signer `cdb01ecbba16065a`) builds on `1891f92d1f2c`
+- foton `1891f92d1f2c` (signer `3d6428cc7ca58ac8`) builds on `795372847744`
+
+## Claims (signed statements)
+
+| about (subject) | predicate | by | signer |
+|---|---|---|---|
+| `f90b314cf558` | describes | CN=Participant-A | `41689cef7a320957` |
+| `6899d057107e` | finding | CN=Participant-B | `df5be38c3b2fc3f8` |
+| `896fdf25781b` | finding | CN=Participant-A | `41689cef7a320957` |
+| `ea209e0e6263` | finding | CN=Participant-C | `bf2bd55457281324` |
+
+_Generated 2026-07-09T19:53:57Z from the content-addressed union._
