@@ -22,6 +22,13 @@
       "pubkey": "_No response_",
       "registeredBy": "gitmick",
       "issue": 1
+    },
+    {
+      "name": "aggTest02",
+      "repo": "https://github.com/deathbychoco/aggTest02.git",
+      "pubkey": "_No response_",
+      "registeredBy": "deathbychoco",
+      "issue": 4
     }
   ]
 }
