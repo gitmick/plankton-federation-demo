@@ -1,6 +1,6 @@
 # Federation status
 
-_Union of 4 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`._
+_Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`, `aggTest02`._
 
 **10 fotons** (reproducible results) · **34 claims** (signed statements) in the union.
 
@@ -89,4 +89,4 @@ _Union of 4 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `c05e961f8524` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-14T16:17:59Z from the content-addressed union._
+_Generated 2026-07-14T17:27:23Z from the content-addressed union._
