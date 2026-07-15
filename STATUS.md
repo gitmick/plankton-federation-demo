@@ -2,7 +2,7 @@
 
 _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`, `aggTest02`._
 
-**10 fotons** (reproducible results) · **36 claims** (signed statements) in the union.
+**12 fotons** (reproducible results) · **38 claims** (signed statements) in the union.
 
 ## Signers
 
@@ -17,6 +17,7 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `70bb2c8898612eb9` | 0 | 1 |
 | `815abf449909eb0c` | 0 | 2 |
 | `8f69f0f5b834f833` | 0 | 3 |
+| `96262b3619fc6903` | 2 | 2 |
 | `ae6a2d9c56220894` | 0 | 11 |
 | `bf2bd55457281324` | 0 | 1 |
 | `c3af895761b197a8` | 0 | 1 |
@@ -35,8 +36,10 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `fbcdd3116ba0` | `ac3bcf10a700`, `d46ca0f3f196` | python work/step7_split.py | `3d6428cc7ca58ac8` |
 | `ac3bcf10a700, a6cc7d1a61ef` | `1891f92d1f2c`, `db41c334dd18` | python work/step6_cluster.py | `3d6428cc7ca58ac8` |
 | `61d6e3dc4c2e` | `58fb727f1f19`, `183187c66d9c` | python work/step2_norm.py | `3d6428cc7ca58ac8` |
+| `ceb4108170d2` | `0d6dab2320cf`, `3bb4a58e2138` | Rscript eda_warfarin.R | `96262b3619fc6903` |
 | `58fb727f1f19` | `b827998c0c49`, `3fe657401f35` | python work/step1_qc.py | `3d6428cc7ca58ac8` |
 | `c05e961f8524, c402694bf9c6` | `1891f92d1f2c`, `5bf57ea454be` | python work/fine_split2.py | `cdb01ecbba16065a` |
+| `9e3703d8ffd9, 771e54e5e1b2, de5a1ce61311` | `0d6dab2320cf`, `3bb4a58e2138` | Rscript pk_model_warfarin.R | `96262b3619fc6903` |
 | `1891f92d1f2c` | `795372847744`, `d2df4751162c` | python work/step5_neighbors.py | `3d6428cc7ca58ac8` |
 
 ## Build-on edges (who built on whose result)
@@ -75,6 +78,7 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `6899d057107e` | finding | CN=Participant-B | `df5be38c3b2fc3f8` |
 | `f90b314cf558` | environment | CN=Participant-A | `69cb06daaf69b642` |
 | `896fdf25781b` | finding | CN=Participant-A | `41689cef7a320957` |
+| `f3a2740adceb` | authored | wolfgang | `96262b3619fc6903` |
 | `6c46fc939ed9` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `d2df4751162c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `5c1e49fdab74` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
@@ -83,6 +87,7 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `d03f2846911a` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
 | `1891f92d1f2c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `ea209e0e6263` | finding | CN=Participant-C | `bf2bd55457281324` |
+| `b8d48ed1410b` | authored | wolfgang | `96262b3619fc6903` |
 | `5bf57ea454be` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `c402694bf9c6` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `b8b35240d3d1` | located-at | CN=Participant-A | `69cb06daaf69b642` |
@@ -92,4 +97,4 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `c05e961f8524` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-15T12:53:28Z from the content-addressed union._
+_Generated 2026-07-15T13:24:41Z from the content-addressed union._
