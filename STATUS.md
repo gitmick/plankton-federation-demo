@@ -2,7 +2,7 @@
 
 _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`, `aggTest02`._
 
-**10 fotons** (reproducible results) · **34 claims** (signed statements) in the union.
+**10 fotons** (reproducible results) · **36 claims** (signed statements) in the union.
 
 ## Signers
 
@@ -15,6 +15,7 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `66fd55ee56c8ac29` | 0 | 1 |
 | `69cb06daaf69b642` | 0 | 5 |
 | `70bb2c8898612eb9` | 0 | 1 |
+| `815abf449909eb0c` | 0 | 2 |
 | `8f69f0f5b834f833` | 0 | 3 |
 | `ae6a2d9c56220894` | 0 | 11 |
 | `bf2bd55457281324` | 0 | 1 |
@@ -78,6 +79,7 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `d2df4751162c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `5c1e49fdab74` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
 | `58e761b78782` | located-at | CN=Participant-C | `1cc05d29616098c3` |
+| `b2629b72eec7` | authored | wolfgang | `815abf449909eb0c` |
 | `d03f2846911a` | located-at | CN=Participant-B | `8f69f0f5b834f833` |
 | `1891f92d1f2c` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
 | `ea209e0e6263` | finding | CN=Participant-C | `bf2bd55457281324` |
@@ -86,7 +88,8 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `b8b35240d3d1` | located-at | CN=Participant-A | `69cb06daaf69b642` |
 | `6bea601f1f71` | reviewed | CN=Participant-C | `70bb2c8898612eb9` |
 | `30fa01a85437` | located-at | CN=Participant-A | `ae6a2d9c56220894` |
+| `7e9e052871eb` | authored | wolfgang | `815abf449909eb0c` |
 | `c05e961f8524` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-15T06:36:39Z from the content-addressed union._
+_Generated 2026-07-15T09:11:00Z from the content-addressed union._
