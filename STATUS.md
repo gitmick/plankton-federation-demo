@@ -97,4 +97,4 @@ _Union of 5 registered participant(s): `pfed-a`, `pfed-b`, `pfed-c`, `pfed-demo`
 | `c05e961f8524` | located-at | CN=Participant-C | `1cc05d29616098c3` |
 | `f90b314cf558` | reviewed | CN=Participant-B | `04beccabc4b7e1ca` |
 
-_Generated 2026-07-18T12:28:24Z from the content-addressed union._
+_Generated 2026-07-18T14:00:09Z from the content-addressed union._
